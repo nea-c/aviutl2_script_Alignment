@@ -1,3 +1,6 @@
+--information:Alignment r2 by 猫愛
+--label:配置
+
 --select@mode:タイプ=1,ピクセル=1,割合=2
 --track@xpos:X位置,-10000,10000,0,0.01
 --track@ypos:Y位置,-10000,10000,0,0.01
@@ -6,11 +9,12 @@
 --track@deg:円移動,-360,360,0,0.01
 --track@screenX:画面補正X(%),-10000,10000,0,0.01
 --track@screenY:画面補正Y(%),-10000,10000,0,0.01
---check@guide:ガイド,1
---check@guideSavingRemove:出力時ガイド非表示,1
---color@guideColor:ガイド色,0xff0000
---track@guideSize:ガイドサイズ,0,20000,20,1
---track@guideWidth:ガイド太さ,0,200,3,1
+--check@guide:ガイド表示,1
+--group:ガイド関連,false
+--color@guideColor:色,0xff0000
+--track@guideSize:サイズ,0,20000,20,1
+--track@guideWidth:太さ,0,200,3,1
+--check@guideSavingRemove:出力時非表示,1
 
 
 local zoomsize = 100 / obj.getvalue("zoom")
